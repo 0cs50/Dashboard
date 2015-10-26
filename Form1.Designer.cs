@@ -559,7 +559,7 @@
             this.tabSplunk.TabIndex = 0;
             this.tabSplunk.Text = "Splunk";
             this.tabSplunk.UseVisualStyleBackColor = true;
-            this.tabSplunk.Resize += new System.EventHandler(this.tabSplunk_Resize);
+            
             // 
             // pSplunk
             // 
@@ -964,8 +964,7 @@
             this.tabBac.TabIndex = 17;
             this.tabBac.Text = "BAC";
             this.tabBac.UseVisualStyleBackColor = true;
-            this.tabBac.Click += new System.EventHandler(this.tabBac_Click);
-            // 
+           
             // wBac
             // 
             this.wBac.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1719,7 +1718,7 @@
             this.activeLabel6.TabIndex = 5;
             this.activeLabel6.Text = "       SoapUI";
             this.activeLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.activeLabel6.Click += new System.EventHandler(this.activeLabel6_Click);
+            
             // 
             // activeLabel5
             // 
@@ -1845,7 +1844,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(591, 108);
             this.panel6.TabIndex = 18;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            
             // 
             // linkLabel21
             // 
@@ -2074,7 +2073,6 @@
             this.linkLabel7.TabIndex = 6;
             this.linkLabel7.TabStop = true;
             this.linkLabel7.Text = "FHS";
-            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
             this.linkLabel7.Click += new System.EventHandler(this.linkLabel1_Click);
             // 
             // linkLabel6
@@ -2330,7 +2328,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
             this.Click += new System.EventHandler(this.Form1_Click);
             this.groupBox5.ResumeLayout(false);

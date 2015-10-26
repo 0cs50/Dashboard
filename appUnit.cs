@@ -289,8 +289,7 @@ namespace Dashboard
                 MoveWindow(appSplunk, -10, -30, pSplunk.Width + 20, pSplunk.Height + 32, true);
             }
             
-        }
-               
+        }               
 
         private void xBrowser()
         {
@@ -347,12 +346,7 @@ namespace Dashboard
         {
             // Stop the application
             if (appWin != IntPtr.Zero && appFhs != IntPtr.Zero && appSplunk != IntPtr.Zero)
-            {
-                // Post a close message
-                //PostMessage(appWin, WM_CLOSE, 0, 0);
-                //PostMessage(appFhs, WM_CLOSE, 0, 0);
-                //PostMessage(appSplunk, WM_CLOSE, 0, 0);
-
+            {  
                 // Delay for it to get the message
                 System.Threading.Thread.Sleep(1000);
                 // Clear internal handle
@@ -362,14 +356,11 @@ namespace Dashboard
             }
 
             base.OnHandleDestroyed(e);
-        }
-
-        
+        }        
 
         //Resize views to fit the parent window
         protected override void OnResize(EventArgs e)
         {
-
             if (appWin != IntPtr.Zero)
             {
                 MoveWindow(appWin, -10, -30, pPutty.Width + 20, pPutty.Height + 32, true);
@@ -393,7 +384,6 @@ namespace Dashboard
 
             process.Start();
         }
-
 
         private static void startApp(string path, string FileName)
         {
